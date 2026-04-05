@@ -1,43 +1,60 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
-</p>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="250" alt="Laravel">
+  <br><br>
 
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Framework-Laravel%2011.x-FF2D20.svg?style=for-the-badge&logo=laravel" alt="Laravel"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Language-PHP%208.2-777BB4.svg?style=for-the-badge&logo=php" alt="PHP"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Status-Development-success.svg?style=for-the-badge" alt="Status"></a>
-</p>
+  # 🎪 Amikom Event Hub
+  
+  **Platform Manajemen Event Kampus Terpadu & Interaktif**
+  
+  [![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20?style=flat-square&logo=laravel)](https://laravel.com)
+  [![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?style=flat-square&logo=php)](https://php.net)
+  [![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square&logo=mysql)](https://www.mysql.com/)
+  [![UI/UX](https://img.shields.io/badge/UI%2FUX-Optimized-00C4CC?style=flat-square&logo=figma)](#)
+
+  *Proyek ini dikembangkan untuk mata kuliah Praktikum Bisnis Digital dengan penekanan pada struktur relasi database yang solid dan antarmuka pengguna (UI/UX) yang intuitif.*
+</div>
 
 ---
 
-## 🚀 Tentang Amikom Event Hub
+## 👨‍💻 Tentang Pengembang
 
-**Amikom Event Hub** adalah sebuah platform digital berbasis web yang dirancang khusus untuk memusatkan, mengelola, dan mempromosikan berbagai acara, seminar, dan *workshop* di lingkungan kampus. Proyek ini dikembangkan sebagai bagian dari tugas **Praktikum Bisnis Digital**.
+| | |
+| :--- | :--- |
+| **Nama** | **Muhammad Adam Siswantoro** |
+| **Program Studi** | Sistem Informasi, Fakultas Ilmu Komputer |
+| **Institusi** | Universitas Amikom |
+| **Fokus Keahlian** | Full-stack Laravel, Database Management, & UI/UX Design |
 
-Aplikasi ini bertujuan untuk memudahkan mahasiswa dalam menemukan *event* kampus yang relevan, sekaligus memberikan kemudahan bagi penyelenggara (seperti BEM, HMJ, atau UKM) untuk memanajemen tiket dan pendaftaran peserta secara digital dan terintegrasi.
+---
 
-## ✨ Fitur Unggulan
+## 💡 Konsep Aplikasi
 
-- **Event Discovery:** Katalog *event* kampus yang mudah dinavigasi dengan fitur pencarian dan filter kategori.
-- **User Authentication:** Sistem *login* dan registrasi yang aman (Mendukung *role* Mahasiswa dan Penyelenggara/Admin).
-- **Ticket Management:** Pemesanan tiket digital dan manajemen kuota peserta secara *real-time*.
-- **Admin Dashboard:** Panel khusus untuk penyelenggara *event* dalam melacak statistik pendaftar dan mempublikasikan acara baru.
-- **Responsive Design:** Tampilan antarmuka yang optimal baik diakses melalui *desktop* (laptop) maupun *mobile* (smartphone/tablet).
+Amikom Event Hub bukan sekadar aplikasi pendaftaran biasa. Dibangun dengan *mindset* Bisnis Digital, platform ini menjembatani kesenjangan informasi antara penyelenggara acara (UKM/BEM/Fakultas) dengan mahasiswa. 
 
-## 🛠️ Teknologi yang Digunakan
+Fokus utama pengembangan terletak pada:
+1. **Efisiensi Database:** Skema database dirancang untuk pencarian acara yang cepat dan manajemen transaksi tiket yang aman (mengaplikasikan prinsip *Database Management System* yang baik).
+2. **User Experience (UX):** Alur pendaftaran peserta dibuat sesederhana mungkin agar konversi partisipasi acara kampus meningkat.
 
-Proyek ini dibangun menggunakan *tech stack* modern untuk memastikan performa dan skalabilitas:
+## 🌟 Fitur Inti
 
-- **Backend:** [Laravel](https://laravel.com) (PHP Framework)
-- **Frontend:** Blade Templating Engine, Tailwind CSS / Bootstrap *(sesuaikan)*
-- **Database:** MySQL
-- **Environment:** Node.js & NPM (untuk *asset compilation*)
+* 🔐 **Multi-Level Authentication:** Akses terpisah dan aman untuk *Super Admin*, *Event Organizer*, dan *Mahasiswa*.
+* 📅 **Dynamic Event Discovery:** Katalog acara dengan filter cerdas berdasarkan kategori dan tanggal.
+* 🎟️ **Ticketing System:** Manajemen kuota, *generate* tiket digital, dan rekapitulasi data peserta yang *real-time*.
+* 📊 **Organizer Dashboard:** Visualisasi data pendaftar untuk keperluan evaluasi dan laporan panitia.
 
-## 💻 Panduan Instalasi (Local Development)
+## ⚙️ Persyaratan Sistem
 
-Ingin menjalankan proyek ini di mesin lokal kamu? Ikuti langkah-langkah berikut:
+Pastikan *environment* lokal Anda memenuhi spesifikasi berikut:
+* PHP `>= 8.3`
+* Composer
+* Node.js & NPM
+* Database Service (MySQL/MariaDB)
 
-1. **Clone repository ini**
-   ```bash
-   git clone [https://github.com/username-kamu/amikomeventhub.git](https://github.com/username-kamu/amikomeventhub.git)
-   cd amikomeventhub
+## 🚀 Panduan Instalasi (Localhost)
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan Amikom Event Hub di mesin lokal Anda:
+
+**1. Kloning Repositori**
+```bash
+git clone [https://github.com/username-kamu/amikomeventhub.git](https://github.com/username-kamu/amikomeventhub.git)
+cd amikomeventhub
