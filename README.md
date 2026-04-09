@@ -1,10 +1,15 @@
-# 🎟️ Amikom Event Hub
+<div align="center">
 
-## 👨‍💻 Profil Pengembang
+## Halo, Saya Muhammad Adam Siswantoro
 
-* **Nama Lengkap:** Muhammad Adam Siswantoro
-* **NIM:** 24.12.3281
-* **Program Studi:** Sistem Informasi, Fakultas Ilmu Komputer
-* **Fokus:** Full-stack Web Development, UI/UX Design, & Relational Database Management
+Muhammad Adam Siswantoro | [Isi NIM kamu, misal: 24.12.3281]
+<br>
+Information Systems | amikomeventhub_3281
 
+</div>
 
+---
+
+## Amikom Event Hub
+
+[[https://amikomeventhub-3281-main-xxxxxx.free.laravel.cloud/](https://amikomeventhub-3281-main-xxxxxx.free.laravel.cloud/)](https://amikomeventhub3281-main-tnep21.free.laravel.cloud/)
