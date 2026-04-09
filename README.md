@@ -2,9 +2,9 @@
 
 ## Halo, Saya Muhammad Adam Siswantoro
 
-Muhammad Adam Siswantoro | [Isi NIM kamu, misal: 24.12.3281]
+Muhammad Adam Siswantoro | 24.12.3281
 <br>
-Information Systems | amikomeventhub_3281
+Digital Business | amikomeventhub_3281
 
 </div>
 
