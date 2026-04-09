@@ -12,4 +12,4 @@ Information Systems | amikomeventhub_3281
 
 ## Amikom Event Hub
 
-[[https://amikomeventhub-3281-main-xxxxxx.free.laravel.cloud/](https://amikomeventhub-3281-main-xxxxxx.free.laravel.cloud/)](https://amikomeventhub3281-main-tnep21.free.laravel.cloud/)
+https://amikomeventhub3281-main-tnep21.free.laravel.cloud/
