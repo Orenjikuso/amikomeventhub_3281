@@ -4,7 +4,7 @@
 
 Muhammad Adam Siswantoro | 24.12.3281
 <br>
-Information Systems | amikomeventhub_3281
+Digital Business | amikomeventhub_3281
 
 </div>
 
