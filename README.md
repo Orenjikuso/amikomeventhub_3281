@@ -12,4 +12,4 @@ Digital Business | amikomeventhub_3281
 
 ## Amikom Event Hub
 
-https://amikomeventhub3281-main-tnep21.free.laravel.cloud/
+https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/
