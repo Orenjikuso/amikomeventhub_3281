@@ -21,8 +21,8 @@ https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/
 | **TUGAS 1** | Project Initial | [Lihat Tugas 1](#) |
 | **TUGAS 2** | Dashboard | [Lihat Dashboard](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin) |
 | | Event | [Lihat Event](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin/events) |
-| | Event | [Lihat Transaksi](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin/transactions) |
-| | Event | [Lihat Beranda](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/) |
-| | Event | [Lihat Detail Event](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/event-detail.html) |
-| | Event | [Lihat Checkout](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/checkout.html) |
+| | Transaksi | [Lihat Transaksi](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin/transactions) |
+| | Beranda | [Lihat Beranda](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/) |
+| | Detail Event | [Lihat Detail Event](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/event-detail.html) |
+| | Checkout | [Lihat Checkout](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/checkout.html) |
 
