@@ -13,3 +13,16 @@ Digital Business | amikomeventhub_3281
 ## Amikom Event Hub
 
 https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/
+
+### Daftar Tugas
+
+| Nama Tugas | Deskripsi / Bagian | Link Proyek |
+| :--- | :--- | :--- |
+| **TUGAS 1** | Project Initial | [Lihat Tugas 1](#) |
+| **TUGAS 2** | Dashboard | [Lihat Dashboard](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin) |
+| | Event | [Lihat Event](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin/events) |
+| | Event | [Lihat Transaksi](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/admin/transactions) |
+| | Event | [Lihat Beranda](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/) |
+| | Event | [Lihat Detail Event](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/event-detail.html) |
+| | Event | [Lihat Checkout](https://amikomeventhub-3281-main-cboxp9.free.laravel.cloud/checkout.html) |
+
