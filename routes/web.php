@@ -6,6 +6,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EventController as EventAdminController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\PartnerController;
 
 // Rute User App
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -38,4 +39,6 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/transactions', [EventAdminController::class, 'transactions'])->name('transactions.index');
 
     Route::resource('categories', CategoryController::class)->only(['index', 'store', 'update', 'destroy']);
+
+    Route::resource('partners', PartnerController::class)->only(['index', 'store', 'update', 'destroy']);
 });

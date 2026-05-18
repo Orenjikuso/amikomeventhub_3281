@@ -113,4 +113,54 @@
             @endforelse
         </div>
     </section>
+
+    <!-- Kategori Section (Soal 4) -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold mb-2">Kategori Event</h2>
+            <p class="text-slate-500 font-medium">Temukan event sesuai minatmu</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+            @foreach($categories as $category)
+            <a href="#events"
+                class="group px-6 py-3 bg-white border-2 border-slate-100 rounded-2xl hover:border-indigo-600 hover:bg-indigo-50 transition-all duration-200 flex items-center gap-3">
+                <svg class="w-5 h-5 text-indigo-400 group-hover:text-indigo-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                </svg>
+                <span class="font-bold text-slate-700 group-hover:text-indigo-600 transition">{{ $category->name }}</span>
+                <span class="text-xs bg-indigo-100 text-indigo-600 px-2 py-0.5 rounded-full font-bold">{{ $category->events_count }}</span>
+            </a>
+            @endforeach
+        </div>
+    </section>
+
+    <!-- Partner Section (Soal 4) -->
+    @if($partners->count() > 0)
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-extrabold mb-2">Partner Kami</h2>
+            <p class="text-slate-500 font-medium">Didukung oleh berbagai mitra terpercaya</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6">
+            @foreach($partners as $partner)
+            <div class="bg-white rounded-2xl border border-slate-100 p-6 w-40 flex flex-col items-center justify-center gap-3 hover:shadow-xl hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
+                @if($partner->logo_display_url)
+                    <div class="relative w-16 h-16 flex items-center justify-center overflow-hidden rounded-xl">
+                        {{-- Purple overlay yang hilang saat hover --}}
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/30 to-purple-500/40 rounded-xl group-hover:opacity-0 transition-opacity duration-500 z-10"></div>
+                        <img src="{{ $partner->logo_display_url }}" alt="{{ $partner->name }}"
+                            class="h-14 w-14 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500 relative z-0">
+                    </div>
+                @else
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-200 to-purple-200 flex items-center justify-center group-hover:from-indigo-100 group-hover:to-purple-100 group-hover:scale-110 transition-all duration-300">
+                        <span class="text-indigo-700 font-black text-xl">{{ strtoupper(substr($partner->name, 0, 2)) }}</span>
+                    </div>
+                @endif
+                <p class="text-sm font-bold text-slate-500 group-hover:text-indigo-600 text-center transition-colors duration-300">{{ $partner->name }}</p>
+            </div>
+            @endforeach
+        </div>
+    </section>
+    @endif
 @endsection
