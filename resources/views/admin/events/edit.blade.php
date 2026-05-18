@@ -67,12 +67,10 @@
 
         <div>
             <label class="block text-sm font-bold text-slate-700 mb-2 uppercase tracking-wide">Poster Event (Opsional)</label>
-            @if($event->poster_path)
             <div class="mb-3 flex items-center gap-4">
-                <img src="{{ asset('storage/' . $event->poster_path) }}" alt="Poster saat ini" class="w-20 h-24 rounded-xl object-cover shadow-sm border-2 border-slate-100">
+                <img src="{{ $event->poster_url }}" alt="Poster saat ini" class="w-20 h-24 rounded-xl object-cover shadow-sm border-2 border-slate-100">
                 <p class="text-sm text-slate-500">Poster saat ini. Upload gambar baru untuk mengganti.</p>
             </div>
-            @endif
             <input type="file" name="poster" accept="image/*"
                 class="w-full px-5 py-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:ring-4 focus:ring-indigo-500/10 focus:border-indigo-600 outline-none transition font-medium">
             @error('poster') <span class="text-red-500 text-sm mt-1">{{ $message }}</span> @enderror

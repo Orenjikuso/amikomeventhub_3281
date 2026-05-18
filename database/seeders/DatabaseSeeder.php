@@ -34,7 +34,26 @@ class DatabaseSeeder extends Seeder
             'slug' => 'entertaiment',
         ]);
 
-        // 3. Insert Sampel Events
+        // 3. Copy poster images dari public/assets ke storage/posters
+        $postersDir = storage_path('app/public/posters');
+        if (!is_dir($postersDir)) {
+            mkdir($postersDir, 0777, true);
+        }
+
+        $posterMapping = [
+            'concert.png' => 'event-1.png',
+            'hackathon.png' => 'event-2.png',
+            'workshop.png' => 'event-3.png',
+        ];
+
+        foreach ($posterMapping as $source => $target) {
+            $sourcePath = public_path("assets/{$source}");
+            if (file_exists($sourcePath)) {
+                copy($sourcePath, "{$postersDir}/{$target}");
+            }
+        }
+
+        // 4. Insert Sampel Events
         \App\Models\Event::create([
             'category_id' => $category2->id,
             'title' => 'Jazz Night 2025',
@@ -69,3 +88,4 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 }
+
