@@ -137,29 +137,36 @@
 
     <!-- Partner Section (Soal 4) -->
     @if($partners->count() > 0)
-    <section class="max-w-7xl mx-auto px-6 py-16">
-        <div class="text-center mb-10">
-            <h2 class="text-3xl font-extrabold mb-2">Partner Kami</h2>
-            <p class="text-slate-500 font-medium">Didukung oleh berbagai mitra terpercaya</p>
-        </div>
-        <div class="flex flex-wrap justify-center gap-6">
-            @foreach($partners as $partner)
-            <div class="bg-white rounded-2xl border border-slate-100 p-6 w-40 flex flex-col items-center justify-center gap-3 hover:shadow-xl hover:border-indigo-300 hover:-translate-y-1 transition-all duration-300 group cursor-pointer">
-                @if($partner->logo_display_url)
-                    <div class="relative w-16 h-16 flex items-center justify-center overflow-hidden rounded-xl">
-                        {{-- Purple overlay yang hilang saat hover --}}
-                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/30 to-purple-500/40 rounded-xl group-hover:opacity-0 transition-opacity duration-500 z-10"></div>
-                        <img src="{{ $partner->logo_display_url }}" alt="{{ $partner->name }}"
-                            class="h-14 w-14 object-contain grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500 relative z-0">
-                    </div>
-                @else
-                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-200 to-purple-200 flex items-center justify-center group-hover:from-indigo-100 group-hover:to-purple-100 group-hover:scale-110 transition-all duration-300">
-                        <span class="text-indigo-700 font-black text-xl">{{ strtoupper(substr($partner->name, 0, 2)) }}</span>
-                    </div>
-                @endif
-                <p class="text-sm font-bold text-slate-500 group-hover:text-indigo-600 text-center transition-colors duration-300">{{ $partner->name }}</p>
+    <section class="py-20 mt-8 bg-gradient-to-b from-white via-indigo-50/40 to-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 px-5 py-2 bg-indigo-100/80 rounded-full mb-5">
+                    <svg class="w-4 h-4 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="text-indigo-700 text-sm font-bold">Mitra Terpercaya</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-3">Partner & Sponsor</h2>
+                <p class="text-slate-500 font-medium max-w-md mx-auto">Berkolaborasi bersama mitra terbaik untuk event berkualitas</p>
             </div>
-            @endforeach
+
+            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-10">
+                @foreach($partners as $partner)
+                <a href="#" class="group flex flex-col items-center gap-3 transition-all duration-300 hover:-translate-y-1">
+                    @if($partner->logo_display_url)
+                        <div class="h-16 w-28 flex items-center justify-center">
+                            <img src="{{ $partner->logo_display_url }}" alt="{{ $partner->name }}"
+                                class="max-h-14 max-w-full object-contain grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                        </div>
+                    @else
+                        <div class="h-16 w-28 rounded-2xl bg-slate-100 group-hover:bg-indigo-100 flex items-center justify-center transition-all duration-300">
+                            <span class="text-slate-400 group-hover:text-indigo-600 font-black text-2xl transition-colors duration-300">{{ strtoupper(substr($partner->name, 0, 2)) }}</span>
+                        </div>
+                    @endif
+                    <span class="text-xs font-bold text-slate-400 group-hover:text-indigo-600 uppercase tracking-wider transition-colors duration-300">{{ $partner->name }}</span>
+                </a>
+                @endforeach
+            </div>
         </div>
     </section>
     @endif

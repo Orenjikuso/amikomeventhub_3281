@@ -24,13 +24,24 @@ class Event extends Model
 
     /**
      * Mendapatkan URL poster event yang valid.
-     * Prioritas: 1) File di storage, 2) Gambar default concert.png
+     * Prioritas: 1) File di storage, 2) Asset asli seeder, 3) Default concert.png
      */
     public function getPosterUrlAttribute(): string
     {
         // Cek apakah poster ada di storage (file yang di-upload)
         if ($this->poster_path && Storage::disk('public')->exists($this->poster_path)) {
             return asset('storage/' . $this->poster_path);
+        }
+
+        // Fallback: map poster seeder ke asset asli di public/assets/
+        $assetMap = [
+            'posters/event-1.png' => 'assets/concert.png',
+            'posters/event-2.png' => 'assets/hackathon.png',
+            'posters/event-3.png' => 'assets/workshop.png',
+        ];
+
+        if ($this->poster_path && isset($assetMap[$this->poster_path])) {
+            return asset($assetMap[$this->poster_path]);
         }
 
         // Fallback ke gambar default
