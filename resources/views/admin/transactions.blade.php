@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('title', 'Laporan Transaksi - Admin')
-@section('page-title', 'Laporan Transaksi')
-@section('page-description', 'Pantau arus kas dan penjualan tiket Anda.')
+@section('page_title', 'Laporan Transaksi')
+@section('page_subtitle', 'Pantau arus kas dan penjualan tiket Anda.')
 
 @section('header-actions')
     <div class="flex gap-4">

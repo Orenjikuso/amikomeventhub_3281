@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('title', 'Admin Dashboard - AmikomEventHub')
-@section('page-title', 'Dashboard Ringkasan')
-@section('page-description', 'Selamat datang kembali, Admin!')
+@section('page_title', 'Dashboard Ringkasan')
+@section('page_subtitle', 'Selamat datang kembali, Admin!')
 
 @section('content')
     <!-- Stats Grid -->
@@ -55,7 +55,7 @@
     <div class="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden">
         <div class="p-8 border-b flex justify-between items-center">
             <h3 class="font-black text-xl">Transaksi Terakhir</h3>
-            <a href="{{ route('admin.transactions') }}" class="text-indigo-600 font-bold hover:underline">Lihat Semua</a>
+            <a href="{{ route('admin.transactions.index') }}" class="text-indigo-600 font-bold hover:underline">Lihat Semua</a>
         </div>
         <div class="overflow-x-auto">
             <table class="w-full text-left border-collapse">
