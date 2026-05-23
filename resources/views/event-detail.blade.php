@@ -83,7 +83,7 @@
                         </p>
                     </div>
                     <div>
-                        <a href="{{ route('checkout') }}"
+                        <a href="{{ route('checkout', $event->id) }}"
                             class="inline-block px-10 py-5 bg-white text-indigo-600 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-xl">
                             Pesan Sekarang
                         </a>

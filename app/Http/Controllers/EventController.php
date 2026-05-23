@@ -13,9 +13,10 @@ class EventController extends Controller
         return view('event-detail', compact('event'));
     }
 
-    public function checkout()
+    public function checkout(Event $event)
     {
-        return view('checkout');
+        $event->load('category');
+        return view('checkout', compact('event'));
     }
 
     public function ticket()
