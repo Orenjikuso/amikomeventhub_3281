@@ -42,6 +42,9 @@ class EventController extends Controller
             $data['poster_path'] = $request->file('poster')->store('posters', 'public');
         }
 
+        // Hapus key 'poster' agar tidak ikut masuk ke mass assignment
+        unset($data['poster']);
+
         // Menyimpan data yang telah divalidasi ke dalam tabel menggunakan Model
         Event::create($data);
 
@@ -75,6 +78,9 @@ class EventController extends Controller
             }
             $data['poster_path'] = $request->file('poster')->store('posters', 'public');
         }
+
+        // Hapus key 'poster' agar tidak ikut masuk ke mass assignment
+        unset($data['poster']);
 
         $event->update($data);
 
